@@ -1,0 +1,83 @@
+/* BODY & GENERAL */
+body {
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+  font-family: "sans-serif"; /* asegura misma tipografía en toda la landing */
+}
+
+/* BOTONES MODERNOS */
+.btn-modern {
+  padding: 0.75rem 2rem; /* equivalente a px-8 py-3 */
+  border-radius: 0.5rem; /* rounded-lg */
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 500; /* font-medium */
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-modern:hover {
+  transform: scale(1.07) translateY(-2px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.btn-glow:hover {
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+  }
+  to {
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.7);
+  }
+}
+
+/* GRADIENT TEXT HERO */
+.gradient-text {
+  background: linear-gradient(90deg, #00f0ff, #ff00f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SERVICIOS CARD */
+.service-card {
+  background: linear-gradient(to bottom right, #1f1f1f, #000);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.service-card:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+}
+
+/* QUIÉNES SOMOS */
+#quienes-somos {
+  font-family: inherit; /* hereda la tipografía general (sans) */
+}
+
+#quienes-somos p {
+  font-size: 1.25rem; /* un poco más grande que el texto normal */
+  line-height: 1.75rem;
+  color: #e5e7eb;
+}
+
+#quienes-somos p strong {
+  color: #00f0ff; /* resalta nombres en color vibrante */
+}
+
+#quienes-somos img {
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+#quienes-somos img:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3);
+}
